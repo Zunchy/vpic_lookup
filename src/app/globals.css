@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Allow Dark Mode on Toggle */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
