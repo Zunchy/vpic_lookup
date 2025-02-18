@@ -1,27 +1,27 @@
 "use client";
 
-import { createContext, ReactNode, useContext, useState } from 'react';
+import { createContext, ReactNode, useContext, useState } from "react";
 
 interface TitleLayoutContext {
-    title: string;
-    setTitle: (title: string) => void;
+	title: string;
+	setTitle: (title: string) => void;
 }
 
 const LayoutContext = createContext<TitleLayoutContext>({
-    title: "Home",
-    setTitle: () => { },
+	title: "Home",
+	setTitle: () => {},
 });
 
 export function TitleLayoutProvider({ children }: { children: ReactNode }) {
-    const [title, setTitle] = useState("Home");
+	const [title, setTitle] = useState("Home");
 
-    return (
-        <LayoutContext.Provider value={{ title, setTitle }}>
-            {children}
-        </LayoutContext.Provider>
-    );
+	return (
+		<LayoutContext.Provider value={{ title, setTitle }}>
+			{children}
+		</LayoutContext.Provider>
+	);
 }
 
 export function useTitleLayoutContext() {
-    return useContext(LayoutContext);
+	return useContext(LayoutContext);
 }

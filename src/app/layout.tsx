@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -25,10 +25,10 @@ export default function RootLayout({
 		<html className="dark" lang="en">
 			<head></head>
 			<body
-				className={`bg-white dark:bg-black text-black dark:text-white flex ${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`flex bg-white text-black dark:bg-black dark:text-white ${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<TitleLayoutProvider>
-					<div className="felx flex-col w-full">
+					<div className="felx w-full flex-col">
 						<div className="w-full">
 							<TitleBar />
 						</div>
