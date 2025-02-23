@@ -20,6 +20,7 @@ export default function Navbar() {
 							Vin Decoder
 						</div>
 					</Link>
+					{/* Page Not Implemented */}
 					<Link
 						href="/"
 						className="group mr-2 flex h-10 cursor-pointer items-center gap-6 rounded transition duration-300 hover:bg-black dark:hover:bg-white"
