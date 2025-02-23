@@ -23,7 +23,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html className="dark" lang="en">
-			<head></head>
+			<head>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</head>
 			<body
 				className={`flex bg-white text-black dark:bg-black dark:text-white ${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
@@ -32,11 +34,11 @@ export default function RootLayout({
 						<div className="w-full">
 							<TitleBar />
 						</div>
-						<div className="flex flex-row">
-							<div className="w-1/6">
+						<div className="flex flex-col sm:flex-row">
+							<div className="w-full sm:w-1/6 h-full">
 								<Navbar />
 							</div>
-							<div className="flex w-5/6 items-center justify-center">
+							<div className="flex w-full sm:w-5/6 items-center justify-center">
 								{children}
 							</div>
 						</div>

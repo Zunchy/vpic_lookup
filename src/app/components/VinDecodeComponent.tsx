@@ -84,9 +84,9 @@ export default function VinDecodeComponent() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="flex h-fit w-5/6 items-center rounded rounded-full border border-black dark:border-white p-2 shadow-xl first:mt-6 last:mb-2"
+              className="flex h-fit w-5/6 items-center justify-center sm:rounded sm:rounded-full border border-black dark:border-white p-2 shadow-xl first:mt-6 last:mb-2"
             >
-              <div className="flex flex-row items-center gap-2">
+              <div className="flex flex-col sm:flex-row items-center gap-2">
                 <div className="w-fit font-bold">
                   {item.variable}:
                 </div>

@@ -8,8 +8,8 @@ import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
 	return (
-		<nav className="ml-2 mt-6 flex h-[calc(100vh-80px)] flex-col justify-between font-sans text-sm">
-			<div className="fixed flex h-[calc(100vh-80px)] w-1/6 flex-col justify-between space-y-6 border-r-2 border-black dark:border-white">
+		<nav className="ml-2 mt-6 flex h-[25vh] sm:h-[calc(100vh-80px)] flex-col justify-between font-sans text-sm">
+			<div className="sm:fixed flex h-[25vh] sm:h-[calc(100vh-80px)] w-full sm:w-1/6 flex-col sm:justify-between space-y-6 border-r-2 border-black dark:border-white">
 				<div>
 					<Link
 						href="/vin-decode"

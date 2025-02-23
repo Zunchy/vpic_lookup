@@ -66,15 +66,15 @@ export default function SuggestionsComponent() {
                         {errors.name && <p className="text-xs text-red-500 flex items-center">Enter Name</p>}
                     </div>
 
-                    <div className="w-full flex flex-row gap-4">
-                        <div className="w-2/3 flex flex-col items-center">
+                    <div className="w-full flex flex-col sm:flex-row gap-4">
+                        <div className="w-full sm:w-2/3 flex flex-col items-center">
                             <input className="w-full shadow-m min-h-12 rounded rounded-lg resize-none border-2 border-black dark:border-white bg-gray-200 dark:bg-gray-800 text-center text-m transition duration-300 focus:bg-white dark:focus:bg-black"
                                 {...register("email", { required: true, pattern: isValidEmailPattern })}
                                 placeholder="Email" />
                             {errors.email && <p className="text-xs text-red-500 flex items-center">Enter Valid Email</p>}
                         </div>
 
-                        <div className="w-1/3 flex flex-col items-center">
+                        <div className="w-full sm:w-1/3 flex flex-col items-center">
                             <input className="w-full shadow-m min-h-12 rounded rounded-lg resize-none border-2 border-black dark:border-white bg-gray-200 dark:bg-gray-800 text-center text-m transition duration-300 focus:bg-white dark:focus:bg-black"
                                 {...register("phoneNumber", { required: true, pattern: isValidPhonePattern })}
                                 placeholder="Phone Number" />
@@ -98,7 +98,7 @@ export default function SuggestionsComponent() {
                     <button
                         disabled={!submitEnabled}
                         type="submit"
-                        className="w-1/4 rounded border-2 border-black dark:border-white bg-white dark:bg-black px-4 py-2 font-bold text-black dark:text-white transition duration-300 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
+                        className="w-full sm:w-1/4 rounded border-2 border-black dark:border-white bg-white dark:bg-black px-4 py-2 font-bold text-black dark:text-white transition duration-300 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
                         Submit
                     </button>
                 </form>
